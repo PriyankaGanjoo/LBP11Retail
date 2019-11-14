@@ -41,14 +41,18 @@ public class TC001 {
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
+		//login to retail
+		retailPOM.sendUserName("admin");
+		retailPOM.sendPassword("admin@123");
+		retailPOM.clickLoginBtn();
 	}
 	
-	//@AfterMethod
+	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-	@Test
+	@Test(enabled=false)
 	public void validLoginTest() {
 		retailPOM.sendUserName("admin");
 		screenShot.captureScreenShot("First");
@@ -66,8 +70,27 @@ public class TC001 {
 		//screenShot.captureScreenShot("Seventh");
 		retailPOM.clickAlertAcpt();
 		screenShot.captureScreenShot("Eight");
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText(), "Success: You have modified returns!      ");
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText()," Success: You have modified customers!");
 		screenShot.captureScreenShot("Ninth");
 	}
+	
+	@Test
+	public void customerList() {
+		
+		
+		retailPOM.clickCusticon();
+		screenShot.captureScreenShot("Capture1");
+		retailPOM.clickCustlink();
+		screenShot.captureScreenShot("Capture2");
+		retailPOM.clickCustchk();
+		screenShot.captureScreenShot("Capture3");
+		retailPOM.clickCustdelbtn();
+		//screenShot.captureScreenShot("Seventh");
+		retailPOM.clickAlertAcpt();
+		screenShot.captureScreenShot("Capture4");
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText(), "Success: You have modified customers!"+"\n"+"×");
+		retailPOM.getMessage();
+		screenShot.captureScreenShot("Capture5");
+}
 }
 
