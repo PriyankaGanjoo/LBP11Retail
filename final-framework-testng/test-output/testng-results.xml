@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30785" started-at="2019-11-14T17:21:08 IST" finished-at="2019-11-14T17:21:39 IST">
+  <suite name="Default suite" duration-ms="25393" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:40 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30785" started-at="2019-11-14T17:21:08 IST" finished-at="2019-11-14T17:21:39 IST">
+    <test name="Default test" duration-ms="25393" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:40 IST">
       <class name="simple.TC001">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:simple.TC001@6737fd8f]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2019-11-14T17:21:08 IST" finished-at="2019-11-14T17:21:08 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:simple.TC001@6737fd8f]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:simple.TC001@6737fd8f]" name="setUp" is-config="true" duration-ms="16707" started-at="2019-11-14T17:21:08 IST" finished-at="2019-11-14T17:21:25 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:simple.TC001@6737fd8f]" name="setUp" is-config="true" duration-ms="17084" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="customerList()[pri:0, instance:simple.TC001@6737fd8f]" name="customerList" duration-ms="11977" started-at="2019-11-14T17:21:25 IST" finished-at="2019-11-14T17:21:37 IST">
+        <test-method status="PASS" signature="customersearch()[pri:0, instance:simple.TC001@6737fd8f]" name="customersearch" duration-ms="6256" started-at="2019-11-15T10:38:31 IST" finished-at="2019-11-15T10:38:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- customerList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:simple.TC001@6737fd8f]" name="tearDown" is-config="true" duration-ms="2043" started-at="2019-11-14T17:21:37 IST" finished-at="2019-11-14T17:21:39 IST">
+        </test-method> <!-- customersearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:simple.TC001@6737fd8f]" name="tearDown" is-config="true" duration-ms="1971" started-at="2019-11-15T10:38:38 IST" finished-at="2019-11-15T10:38:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

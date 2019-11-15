@@ -47,6 +47,17 @@ public class RetailPOM {
 	@FindBy(xpath="//i[@class='fa fa-trash-o']")
 	private WebElement Custdelbtn;
 	
+	@FindBy(xpath="//input[@id='input-name']")
+	public WebElement Custname;
+	
+	@FindBy(xpath="//input[@id='input-email']")
+	private WebElement Email;
+	
+	@FindBy(xpath="//button[@id='button-filter']")
+	private WebElement Filter;
+	
+	
+	
 	
 		
 	public void sendUserName(String userName) {
@@ -102,5 +113,19 @@ public class RetailPOM {
 			String message =driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
 			System.out.println(message);
 	}
+	public void sendCustname(String Custname) {
+		this.Custname.clear();
+		this.Custname.sendKeys(Custname); 
+				
+	}
 	
+	public void clickFilter() {
+		this.Filter.click();
+	}
+	public void sendEmail(String Email) {
+		this.Email.clear();
+		this.Email.sendKeys(Email); 
+		
+		
+	}
 }

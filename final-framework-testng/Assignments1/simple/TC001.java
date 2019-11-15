@@ -74,7 +74,7 @@ public class TC001 {
 		screenShot.captureScreenShot("Ninth");
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void customerList() {
 		
 		
@@ -92,5 +92,26 @@ public class TC001 {
 		retailPOM.getMessage();
 		screenShot.captureScreenShot("Capture5");
 }
+	
+	@Test
+	public void customersearch() {
+		
+
+		retailPOM.clickCusticon();
+		screenShot.captureScreenShot("Cust1");
+		retailPOM.clickCustlink();
+		screenShot.captureScreenShot("Cust2");
+		retailPOM.sendCustname("Ashish Yadav");
+		screenShot.captureScreenShot("Cust3");
+		retailPOM.clickFilter();
+		screenShot.captureScreenShot("Cust4");
+		retailPOM.Custname.clear();
+		screenShot.captureScreenShot("Cust5");
+		retailPOM.sendEmail("ashish3029@gmail.com");
+		screenShot.captureScreenShot("Cust6");
+		retailPOM.clickFilter();
+		screenShot.captureScreenShot("Cust7");
+		
+	}
 }
 
