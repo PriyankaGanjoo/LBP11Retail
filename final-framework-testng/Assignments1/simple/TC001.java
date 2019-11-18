@@ -110,7 +110,7 @@ public class TC001 {
 		retailPOM.sendEmail("ashish3029@gmail.com");
 		screenShot.captureScreenShot("Cust6");
 		retailPOM.clickFilter();
-		screenShot.captureScreenShot("Cust7");
+		screenShot.captureScreenShot("Cust");
 		
 	}
 }

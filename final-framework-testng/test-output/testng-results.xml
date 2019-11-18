@@ -1,29 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25393" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:40 IST">
+  <suite name="Default suite" duration-ms="30960" started-at="2019-11-18T11:21:43 IST" finished-at="2019-11-18T11:22:14 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25393" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:40 IST">
-      <class name="simple.TC001">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:simple.TC001@6737fd8f]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:14 IST">
+    <test name="Default test" duration-ms="30960" started-at="2019-11-18T11:21:43 IST" finished-at="2019-11-18T11:22:14 IST">
+      <class name="medium.TC002">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:medium.TC002@72b6cbcc]" name="setUpBeforeClass" is-config="true" duration-ms="31" started-at="2019-11-18T11:21:43 IST" finished-at="2019-11-18T11:21:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:simple.TC001@6737fd8f]" name="setUp" is-config="true" duration-ms="17084" started-at="2019-11-15T10:38:14 IST" finished-at="2019-11-15T10:38:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:medium.TC002@72b6cbcc]" name="setUp" is-config="true" duration-ms="16300" started-at="2019-11-18T11:21:43 IST" finished-at="2019-11-18T11:21:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="customersearch()[pri:0, instance:simple.TC001@6737fd8f]" name="customersearch" duration-ms="6256" started-at="2019-11-15T10:38:31 IST" finished-at="2019-11-15T10:38:38 IST">
+        <test-method status="PASS" signature="returnproduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:medium.TC002@72b6cbcc]" name="returnproduct" duration-ms="5424" started-at="2019-11-18T11:22:00 IST" data-provider="excel-inputs" finished-at="2019-11-18T11:22:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[165.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rohit Verma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rohit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vinod.ganjoo@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SasmitaRing]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[SKU-012]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- customersearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:simple.TC001@6737fd8f]" name="tearDown" is-config="true" duration-ms="1971" started-at="2019-11-15T10:38:38 IST" finished-at="2019-11-15T10:38:40 IST">
+        </test-method> <!-- returnproduct -->
+        <test-method status="PASS" signature="returnproduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:medium.TC002@72b6cbcc]" name="returnproduct" duration-ms="5667" started-at="2019-11-18T11:22:06 IST" data-provider="excel-inputs" finished-at="2019-11-18T11:22:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[166.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rohit Verma]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rohit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verma]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vinod.ganjoo@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.23456789E8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Lorem ipsum dolor sit amet ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[SKU-143]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnproduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:medium.TC002@72b6cbcc]" name="tearDown" is-config="true" duration-ms="2052" started-at="2019-11-18T11:22:12 IST" finished-at="2019-11-18T11:22:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- simple.TC001 -->
+      </class> <!-- medium.TC002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

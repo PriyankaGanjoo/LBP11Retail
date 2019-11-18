@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RetailPOM {
 	private WebDriver driver; 
@@ -56,6 +58,100 @@ public class RetailPOM {
 	@FindBy(xpath="//button[@id='button-filter']")
 	private WebElement Filter;
 	
+	@FindBy(xpath="//i[@class='fa fa-plus']")
+	private WebElement AddReturn;
+	
+	@FindBy(xpath="//input[@id='input-order-id']")
+	private WebElement OrderId;
+	
+	@FindBy(xpath="//input[@id='input-customer']")
+	private WebElement Cust;
+	
+	//@FindBy(xpath="//li[contains(text(),'Default')]")
+	private WebElement CustDefault;
+	
+	@FindBy(xpath="//input[@id='input-firstname']")
+	private WebElement FirstName;
+	
+	@FindBy(xpath="//input[@id='input-lastname']")
+	private WebElement LastName;
+	
+	@FindBy(xpath="//input[@id='input-email']")
+	private WebElement RetEmail;
+	
+	@FindBy(xpath="//input[@id='input-telephone']")
+	private WebElement Phone;
+	
+	@FindBy(xpath="//input[@id='input-product']")
+	private WebElement Product;
+	
+		
+	@FindBy(xpath="//input[@id='input-model']")
+	private WebElement Model;
+	
+		
+	@FindBy(xpath="//i[@class='fa fa-save']")
+	private WebElement Save;
+	
+	
+	//public void Wait() 
+	//{
+		//WebDriverWait wait=new WebDriverWait(driver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-model']")));
+	//}
+	
+	public void CustSave() 
+	{
+		this.Save.click();	
+	}
+	public void ClickAddReturn() 
+	{
+		this.AddReturn.click();	
+	}
+	
+	
+	public void SendOrderId(String id) 
+	{
+		this.OrderId.sendKeys(id);
+		
+	}
+	
+	public void SendCust(String Customer) 
+	{
+		this.Cust.sendKeys(Customer);
+	}
+	
+	
+	public void SendFirstName(String FirstName) 
+	{
+		this.FirstName.sendKeys(FirstName);
+	}
+	
+	public void SendLastName(String Lastname) 
+	{
+		this.LastName.sendKeys(Lastname);	
+	}
+	
+	public void SendRetEmail(String Email) 
+	{
+		this.RetEmail.sendKeys(Email);	
+	}
+	
+	public void SendPhone(String ph) 
+	{
+		this.Phone.sendKeys(ph);
+		
+	}
+	
+	public void SendProduct(String Product) 
+	{
+		this.Product.sendKeys(Product);	
+	}
+	
+	public void SendModel(String Model) 
+	{
+		this.Model.sendKeys(Model);	
+	}
 	
 	
 	
@@ -128,4 +224,5 @@ public class RetailPOM {
 		
 		
 	}
-}
+
+	}
