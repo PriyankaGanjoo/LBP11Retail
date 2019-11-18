@@ -52,13 +52,13 @@ public class TC002 {
 		retailPOM.clickLoginBtn();
 	}
 	
-	@AfterTest
+	//@AfterTest
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
 driver.quit();
 
 }
-	/*@Test//(dataProvider= "excel-inputs", dataProviderClass=LoginDataProviders.class)
+	/*@Test(dataProvider= "excel-inputs", dataProviderClass=LoginDataProviders.class)
 	public void returnproduct()//(int id, String Customer, String Firstname, String Lastname, String Email, int ph, String Product, String Model)
 	{
 		
@@ -79,9 +79,10 @@ driver.quit();
 		retailPOM.clickAlertAcpt();
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText(), "Success: You have modified returns!"+"\n"+"×");
 	}
+	*/
 	
-*/
-	@Test(dataProvider= "excel-inputs", dataProviderClass=LoginDataProviders.class)
+
+	@Test(dataProvider= "excel-inputs", dataProviderClass=LoginDataProviders.class, enabled=false)
 	public void returnproduct(String id, String Customer, String Firstname, String Lastname, String Email, String ph, String Product, String Model)
 	{
 		
@@ -102,6 +103,24 @@ driver.quit();
 		retailPOM.clickAlertAcpt();
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText(), "Success: You have modified returns!"+"\n"+"×");
 	}
+	
+	@Test
+public void customerDetails() {
+		
+		
+		retailPOM.clickCusticon();
+		retailPOM.clickCustlink();
+		retailPOM.ClickEditCust();
+		retailPOM.SendEditFN("Ravi");
+		retailPOM.ClickAddress1();
+		retailPOM.Send("400168");
+		retailPOM.ClickRewards();
+		retailPOM.SendDescription("Rewards added");
+		retailPOM.SendPoints("101");
+		retailPOM.ClickRewardsave();
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText(), "Success: You have modified customers!"+"\n"+"×");
+		
+		}
 		
 }	
 	
